@@ -43,14 +43,14 @@ The .ipynb file plots the cumulative number of infections over time, the number 
 ## Example
 ```python
 # Example of running a basic simulation
-filename = 'network.csv'
+filename = '{name_of_the_file}_{num_nodes}.csv'
 p_infect = 0.1
-initial_infected = ['0']
+initial_infected = 23,45,78,90 # comma seperated, no spaces when prompted
 simulate_infection(graph, p_infect, initial_infected)
 
 # Example of running a simulation with defense
 p_defense = 0.05
-initial_cured = ['1']
+initial_cured = 45,67,89,1
 simultaneous_infection_with_defense(graph, p_infect, p_defense, initial_infected, initial_cured)
 ```
 
