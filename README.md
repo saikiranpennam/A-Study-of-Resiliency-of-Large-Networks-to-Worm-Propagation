@@ -14,12 +14,12 @@ This project simulates the propagation of a worm through various network types a
 
 ## Setup
 
-Ensure you have Python installed on your system along with the necessary libraries: `networkx` for network manipulation and `matplotlib` for plotting.
+Ensure you have Python installed on your system along with the necessary libraries: `networkx` for network manipulation and `matplotlib` for plotting, `csv` for csv file generation and `os` and `numpy` 
 
 Install the required packages using pip:
 
 ```bash
-pip install networkx matplotlib
+pip install networkx matplotlib csv os numpy
 ```
 ## Usage
 ### Prepare Network Files: 
@@ -53,6 +53,11 @@ p_defense = 0.05
 initial_cured = 45,67,89,1
 simultaneous_infection_with_defense(graph, p_infect, p_defense, initial_infected, initial_cured)
 ```
+
+### Also additional input called `choice` was included to give user the option between executing `Program1` or `Program2` or `both`
+### Please wait until all the inputs are entered, the reason being when moving up the number of nodes, the program takes extra time to ask for `choice` input.
+### Tested the code on 100 to 10_000 nodes for both simulations.
+### Including an example file for convenience.
 
 ## Contributing
 
